@@ -1,12 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/blog",
-      "destination": "https://devsubs-blog.feather.blog/blog"
+      "source": "/start",
+      "destination": "https://devsubs-blog.feather.blog/start"
     },
     {
-      "source": "/blog/:path*",
-      "destination": "https://devsubs-blog.feather.blog/blog/:path*"
+      "source": "/start/:path*",
+      "destination": "https://devsubs-blog.feather.blog/start/:path*"
     },
     {
       "source": "/_feather",
@@ -19,7 +19,7 @@
   ],
   "headers": [
     {
-      "source": "/blog",
+      "source": "/start",
       "headers": [
         {
           "key": "X-Forwarded-Host",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/blog/:slug*",
+      "source": "/start/:slug*",
       "headers": [
         {
           "key": "X-Forwarded-Host",
